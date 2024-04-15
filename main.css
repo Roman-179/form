@@ -1,0 +1,110 @@
+:root{
+    --form-color: #1A1A1A;
+    --input-color:#333333;
+    --text-color:#ffffff8b;
+    --blue-color: #00BFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+   
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "montserrat";
+    font-size: 14px;
+    padding: 100px;
+    color: var(--text-color);
+
+}
+form{
+    max-width: 350px;
+    background-color: var(--form-color);
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 21px;
+    
+}
+h1{
+    font-size: 28px;
+    color: var(--blue-color);
+    
+    padding-top: 21px;
+}
+
+.ring{
+    width: 19px;
+    height: 19px;
+    background-color: #00BFFF;
+    border: 1px solid var(--blue-color);
+    border-radius: 50%;
+}
+
+h1::before{
+    content: "" ;
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+  vertical-align: middle;
+    background-color: #00BFFF;
+    border: 1px solid var(--blue-color);
+    border-radius: 50%;
+    /* padding-right: 11px; */
+    margin-right: 11px;
+}
+.name_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 6px; 
+}
+input {
+    background-color: var(--input-color);
+    padding: 13px 10px;
+    border-radius: 10px;
+    border: none;
+    
+}
+.label{
+    display: flex;
+    flex-direction: column;
+}
+.name_box input{
+    width: calc(300px / 2);
+}
+.signin{
+    margin: 0 auto;
+}
+label{
+    position: relative;
+}
+span{
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    transition: 0.3s ease;
+}
+input:focus + span{
+    font-size: 12px;
+    top: -7px;
+}
+.submit{
+    color: white;
+    background-color: #00BFFF;
+    padding: 10px 124px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+a{
+    color: var(--blue-color);
+}
